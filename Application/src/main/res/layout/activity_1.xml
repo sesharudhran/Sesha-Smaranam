@@ -27,21 +27,28 @@
         android:orientation="horizontal"
         android:id="@+id/Linear1">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Ashtothram"
-            android:id="@+id/textView1"
-            android:layout_marginLeft="45dp"
-            android:textSize="25dp"
-            android:autoText="false"
-            android:textColor="#fffdfffb" />
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="108 Swami Potri"-->
+            <!--android:id="@+id/textView1"-->
+            <!--android:layout_marginLeft="45dp"-->
+            <!--android:textSize="25dp"-->
+            <!--android:autoText="false"-->
+            <!--android:textColor="#fffdfffb" />-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_awesome_toolbar1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
 
         <ImageButton
             android:id="@+id/play1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="65dp"
+            android:layout_marginLeft="15dp"
             android:src="@drawable/ic_play" />
         <ImageButton
             android:id="@+id/stop1"

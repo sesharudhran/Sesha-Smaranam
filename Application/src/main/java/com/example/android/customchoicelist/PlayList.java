@@ -34,7 +34,7 @@ public class PlayList extends AppCompatActivity implements OnItemClickListener {
 
 
         final String[] Song_List =
-                new String[]{"Swami Smaranam", "Mahathmiyam", "Sri Swamigal Potri", "Saranagathi Song", "Sri Padhuka Song", "Sri Managala Arthi", "", "", ""};
+                new String[]{ "Mahathmiyam", "Sri Swamigal Potri", "Saranagathi Song", "Sri Padhuka Song", "Sri Managala Arthi", "", "", ""};
 
         ListView lv = (ListView) findViewById(R.id.playList);
         CustomArrayAdapter ca = new CustomArrayAdapter(getApplicationContext(),Song_List);
@@ -49,7 +49,7 @@ public class PlayList extends AppCompatActivity implements OnItemClickListener {
 
         switch (position) {
 
-            case 1:
+            case 0:
 
                 int resID_SongA = getResources().getIdentifier("audiomahathmiyam", "raw", getBaseContext().getPackageName());
 
@@ -83,7 +83,7 @@ public class PlayList extends AppCompatActivity implements OnItemClickListener {
                 break;
 
 
-            case 2:
+            case 1:
 
                 int resID_Song2 = getResources().getIdentifier("sathgurusriseshadriswamigalpotri", "raw", getBaseContext().getPackageName());
 
@@ -116,7 +116,7 @@ public class PlayList extends AppCompatActivity implements OnItemClickListener {
                 }
                 break;
 
-            case 3:
+            case 2:
 
                 int resID_Song3 = getResources().getIdentifier("athmavinthagamsong", "raw", getBaseContext().getPackageName());
 
@@ -150,7 +150,7 @@ public class PlayList extends AppCompatActivity implements OnItemClickListener {
                 break;
 
 
-            case 4:
+            case 3:
 
                 int resID_Song4 = getResources().getIdentifier("padukapujasong", "raw", getBaseContext().getPackageName());
 
@@ -183,7 +183,7 @@ public class PlayList extends AppCompatActivity implements OnItemClickListener {
                 break;
 
 
-            case 5:
+            case 4:
 
                 int resID_Song5 = getResources().getIdentifier("mangalaaarti", "raw", getBaseContext().getPackageName());
 
@@ -229,7 +229,6 @@ public class PlayList extends AppCompatActivity implements OnItemClickListener {
         }
 
     }
-
 
 
 }
