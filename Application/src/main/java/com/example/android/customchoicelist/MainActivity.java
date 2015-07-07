@@ -16,104 +16,68 @@
 
 package com.example.android.customchoicelist;
 
-//import android.app.ListActivity;
-//import android.app.Activity;
-//import android.os.Bundle;
-//import android.view.View;
-//import android.view.ViewGroup;
-//import android.widget.BaseAdapter;
-//import android.widget.TextView;
+
 
 import android.app.Activity;
-import android.content.DialogInterface;
-import android.media.Image;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageButton;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.view.View;
-import android.media.MediaPlayer;
-import android.content.Context;
+import android.net.Uri;
 
 
-/**
- * This sample demonstrates how to create custom single- or multi-choice
- * {@link android.widget.ListView} UIs. The most interesting bits are in
- * the <code>res/layout/</code> directory of this sample.
- */
 
 
 public class MainActivity extends Activity implements View.OnClickListener {
-    ImageButton imageButton1, imageButton2, imageButton3, imageButton4, imageButton5, imageButton6;
 
-    MediaPlayer mp;
+    TextView contactUs;
+    Button songsButton, mahathmiyamButton;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sample_main);
-//        addListenerOnButton();
 
-        imageButton1 = (ImageButton) findViewById(R.id.play1);
-        imageButton2 = (ImageButton) findViewById(R.id.play2);
-        imageButton3 = (ImageButton) findViewById(R.id.play3);
-        imageButton4 = (ImageButton) findViewById(R.id.stop1);
-        imageButton5 = (ImageButton) findViewById(R.id.stop2);
-        imageButton6 = (ImageButton) findViewById(R.id.stop3);
-
-        imageButton1.setOnClickListener(this);
-        imageButton2.setOnClickListener(this);
-        imageButton3.setOnClickListener(this);
-        imageButton4.setOnClickListener(this);
-        imageButton5.setOnClickListener(this);
-        imageButton6.setOnClickListener(this);
+        contactUs = (TextView) findViewById(R.id.contactus);
+        songsButton = (Button) findViewById(R.id.Bhajans);
+        mahathmiyamButton = (Button) findViewById(R.id.mahathmiyam);
 
 
+        songsButton.setOnClickListener(this);
+        mahathmiyamButton.setOnClickListener(this);
+        contactUs.setOnClickListener(this);
 
     }
 
     public void onClick(View v) {
 
-
-
         switch (v.getId()) {
 
-            case R.id.play1:
+            case R.id.Bhajans:
 
-//                Toast.makeText(MainActivity.this,
-//                        "Song 1 Played!", Toast.LENGTH_SHORT).show();
-                try {
-                    if(mp != null && mp.isPlaying()) {
-                        imageButton1.setImageResource(R.drawable.ic_play);
-                            mp.pause();
-                        Toast.makeText(MainActivity.this,
-                                "Song 1 is Paused!", Toast.LENGTH_SHORT).show();
-                    }
-                    else if(mp != null && mp.getDuration() > 0 ){
-                            imageButton1.setImageResource(R.drawable.ic_pause);
-                            mp.start();
-                    }else{
-                        mp = new MediaPlayer();
-                        int resID = getResources().getIdentifier("test", "raw", getBaseContext().getPackageName());
-                        mp = MediaPlayer.create(getBaseContext(),resID);
-                        imageButton1.setImageResource(R.drawable.ic_pause);
-                        mp.start();
-                        Toast.makeText(MainActivity.this,
-                                "Song 1 is Playing!", Toast.LENGTH_SHORT).show();
-                    }
+//                setContentView(R.layout.activity_1);
 
-                    } catch (Exception ex) {
-                    ex.printStackTrace();
-                }
+                Intent intent_1 = new Intent(this, Activity_1.class);
+                startActivity(intent_1);
                 break;
 
-            case R.id.stop1:
-                Toast.makeText(MainActivity.this,
-                        "Song 1 has stopped playing!", Toast.LENGTH_SHORT).show();
-                if(mp.isPlaying()) {
-                    imageButton1.setImageResource(R.drawable.ic_play);
-                    mp.stop();
-                    mp = null;
-                }
-            break;
+            case R.id.mahathmiyam:
+
+                Intent intent_2 = new Intent(this, Activity_2.class);
+                startActivity(intent_2);
+                break;
+
+            case R.id.contactus:
+                final Intent intent_3 = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://seshadri.info"));
+                startActivity(intent_3);
+
         }
+    }
+
+    public void onBackPressed() {
+
+        return;
     }
 }

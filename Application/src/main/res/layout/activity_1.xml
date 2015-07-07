@@ -1,0 +1,125 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/app_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/play_list"
+        android:id="@+id/textView"
+        android:textColor="#fffdfffb"
+        android:textAlignment="center"
+        android:textSize="@dimen/margin_large" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/Linear1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Ashtothram"
+            android:id="@+id/textView1"
+            android:layout_marginLeft="45dp"
+            android:textSize="25dp"
+            android:autoText="false"
+            android:textColor="#fffdfffb" />
+
+        <ImageButton
+            android:id="@+id/play1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:src="@drawable/ic_play" />
+        <ImageButton
+            android:id="@+id/stop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_stop" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/Linear2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Padhuka Bhajan"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="45dp"
+            android:textSize="25dp"
+            android:textColor="#fffdfffb" />
+
+        <ImageButton
+            android:id="@+id/play2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_play" />
+        <ImageButton
+            android:id="@+id/stop2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_stop" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:id="@+id/Linear3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Arathi Bhajan"
+            android:id="@+id/textView3"
+            android:layout_marginLeft="45dp"
+            android:textSize="25dp"
+            android:textColor="#fffdfffb" />
+
+        <ImageButton
+            android:id="@+id/play3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:src="@drawable/ic_play" />
+        <ImageButton
+            android:id="@+id/stop3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_stop" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locate Us"
+        android:id="@+id/Map"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp" />
+
+</LinearLayout>

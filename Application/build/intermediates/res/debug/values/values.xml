@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black_overlay">#66000000</color>
+    <declare-styleable name="ButtonBarContainerTheme"><attr format="reference" name="metaButtonBarStyle"/><attr format="reference" name="metaButtonBarButtonStyle"/></declare-styleable>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/template-dimens.xml -->
+    <eat-comment/>
+    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="page_margin">@dimen/margin_medium</dimen>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/template-dimens.xml -->
+    <eat-comment/>
+    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="Main_Button_1"><b>Mahathmiyam</b></string>
+    <string name="Main_Button_2"><b>       Bhajans                </b></string>
+    <string name="action_settings">Settings</string>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/base-strings.xml -->
+    <eat-comment/>
+    <string name="app_name">My First App</string>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/base-strings.xml -->
+    <eat-comment/>
+    <string name="intro_message">
+        <![CDATA[
+
+
+                This sample demonstrates how to create custom checkable layouts, for use with ListView\'s choiceMode
+                attribute.
+
+
+        ]]>
+    </string>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="mahathmiyam">Sathguru Sri Seshadri Swamigal born in Kanchi alias Kanchipuram (Tamil Nadu, India) to Shri.Varadharajan and Smt.Maragathambal a devout couple from a family of Sri Vidya Upasakars, Sri Seshadri Swamigal was believed to be the gift of Goddess Kamakshi.  A very notable incident in his life as a young boy when he was four on his way to Varadharaja Perumal Swami temple in Kancheepuram he ran up to a shopkeeper and asked for the idol of Lord Krishna. The shopkeeper was delighted to see such devotion in a young boy and gladly gifted it to him.  Then discovered that he had sold a hundred such idols within that day. He would have barely sold a fifty in months, otherwise. The man referred to the Sathguru as \'<i><b>THANGA KAI</b></i>\'.  In his teens the sage disappeared from a locked room. It was the family \'s idea to keep him bound to them and not let go of him. He went to Tiruvannamalai where he remained for 40 glorious years until his Maha Samadhi in 1929 in Thiruvannamalai, Guru and Master to hundreds of disciples who made their way to him in pain only to find solace in his presence.  Innumerable miracles are related to the Sathguru and his protection of his disciples.</string>
+    <string name="mahathmiyam_view_name"><b><u>Swami Mahamithyam</u></b></string>
+    <string name="play_list"><b><u><text alignment="centre"> Swami Smaranam  </text></u></b></string>
+    <string name="seshadriinfo">Visit us @ <a href="http://seshadri.info">http://seshadri.info</a></string>
+    <string name="swami_name"><b><u>  Sri Seshadri Swamigal  </u></b></string>
+    <string name="title_activity_1">Swami Smaranam</string>
+    <string name="title_activity_2">Swami Mahathmiyam</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/template-styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="Theme.Sample"/>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    <style name="ButtonBarButton"/>
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>-->
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/template-styles.xml -->
+    <eat-comment/>
+    <style name="Theme.Base" parent="android:Theme.Light"/>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Theme.NoTitle" parent="@android:style/Theme.Holo.NoActionBar"/>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/template-styles.xml -->
+    <eat-comment/>
+    <style name="Theme.Sample" parent="Theme.Base"/>
+    <style name="Widget"/>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Widget.DescriptionBar">
+        <item name="android:background">#fb3</item>
+        <item name="android:paddingTop">@dimen/margin_medium</item>
+        <item name="android:paddingBottom">@dimen/margin_medium</item>
+        <item name="android:paddingLeft">@dimen/page_margin</item>
+        <item name="android:paddingRight">@dimen/page_margin</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <!-- From: file:/Users/vabirba/AndroidStudioProjects/CustomChoiceList/Application/src/main/res/values/template-styles.xml -->
+    <eat-comment/>
+    <style name="Widget.SampleMessage">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+</resources>

@@ -1,0 +1,88 @@
+
+ <!--Home screen-->
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/Linear1"
+        android:background="@drawable/app_background"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swami_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/textViewC"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="#fffdfffb" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="2dp" />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="1dp"
+            android:src="@drawable/home_pic"/>
+    </FrameLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Main_Button_1"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="85dp"
+        android:textSize="25dp"
+        android:id="@+id/mahathmiyam"
+        android:height="50dp"
+        android:width="190dp"
+        android:onClick="onClick" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Main_Button_2"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="85dp"
+        android:textSize="25dp"
+        android:width="190dp"
+        android:height="50dp"
+        android:id="@+id/Bhajans"
+        android:onClick="onClick" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/seshadriinfo"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/contactus"
+        android:textSize="18dp"
+        android:textColor="#fffdfffb"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
